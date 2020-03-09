@@ -33,16 +33,22 @@ def ejercicio_b():
 
 #Funcion que calcula el producto de dos matrices
 def ejercicio_c():
-    X = [[1,2,3,4,5],
-         [1,2,3,4,5],
-         [1,2,3,4,5]]
-    Y = [[1,2,3,4,5],
-         [1,2,3,4,5],
-         [1,2,3,4,5]]
+    X = [[1, 2, 3, 4, 5],
+        [1, 2, 3, 4, 5],
+        [1, 2, 3, 4, 5],
+        [1, 2, 3, 4, 5],
+        [1, 2, 3, 4, 5]]
+    Y = [[1, 2, 3, 4, 5],
+        [1, 2, 3, 4, 5],
+        [1, 2, 3, 4, 5],
+        [1, 2, 3, 4, 5],
+        [1, 2, 3, 4, 5]]
 
-    Result = [[0,0,0,0,0],
-         [0,0,0,0,0],
-         [0,0,0,0,0]]
+    Result = [[0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0]]
 
     for i in range(len(X)):
         for j in range(len(Y[0])):
@@ -185,4 +191,20 @@ def main():
             print("Elija una opcion valida.")
 
 
+def login():
+    log = True
+
+    while log:
+        email = input("Ingrese su email: ")
+        contra = input("Ingrese su password: ")
+        if (email == '21806108@live.uem.es'):
+            if (contra == '1234'):
+                print("Acceso concedido")
+                log = False
+        else:
+            print("Email y password invalidos")
+
+
+
+login()
 main()
