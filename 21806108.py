@@ -1,4 +1,4 @@
-n = 21806108
+n = 5
 
 #Funcion que tiene tres bucles diferentes
 def ejercicio_a():
@@ -31,6 +31,7 @@ def ejercicio_b():
     else:
         print(n, "Es un numero primo")
 
+# las matrices deben de auto generarse.
 #Funcion que calcula el producto de dos matrices
 def ejercicio_c():
     X = [[1, 2, 3, 4, 5],
